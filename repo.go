@@ -6,10 +6,10 @@ var currentId int
 
 var todos Todos
 
-// Give us some seed data
 func init() {
-	RepoCreateTodo(Todo{Name: "Write presentation"})
-	RepoCreateTodo(Todo{Name: "Host meetup"})
+	RepoCreateTodo(Todo{Name: "Do something"})
+	RepoCreateTodo(Todo{Name: "Write json endpoint using Goland", Completed: true})
+	RepoCreateTodo(Todo{Name: "Do something cool"})
 }
 
 func RepoFindTodo(id int) Todo {
